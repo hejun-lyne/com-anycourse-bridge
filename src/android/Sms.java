@@ -43,7 +43,7 @@ public class Sms extends CordovaPlugin {
     /**
      * Constructor.
      */
-    public Device() {
+    public Sms() {
     }
 
     /**
@@ -55,7 +55,7 @@ public class Sms extends CordovaPlugin {
      */
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
         super.initialize(cordova, webView);
-        Device.uuid = getUuid();
+        Sms.uuid = getUuid();
     }
 
     /**
