@@ -1,13 +1,13 @@
 {
     "version": "1.0.0",
-    "name": "com.anycourse.sms",
-    "cordova_name": "Sms",
-    "description": "AnyCourse Sms Plugin",
+    "name": "com.anycourse.bridge",
+    "cordova_name": "Bridge",
+    "description": "AnyCourse Bridge Plugin",
     "license": "Apache 2.0",
-    "repo": "https://github.com/hejun-lyne/com-anycourse-sms.git",
+    "repo": "https://github.com/hejun-lyne/com-anycourse-bridge.git",
     "keywords": [
         "AnyCourse",
-        "sms"
+        "bridge"
     ],
     "platforms": [
         "android",

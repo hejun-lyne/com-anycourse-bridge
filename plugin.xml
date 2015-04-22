@@ -21,39 +21,39 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="com.anycourse.sms"
+    id="com.anycourse.bridge"
     version="1.0.0">
-    <name>Sms</name>
-    <description>AnyCourse SMS Plugin</description>
+    <name>Bridge</name>
+    <description>AnyCourse Bridge Plugin</description>
     <license>Apache 2.0</license>
-    <keywords>anycourse,sms</keywords>
-    <repo>https://github.com/hejun-lyne/com-anycourse-sms.git</repo>
+    <keywords>anycourse,bridge</keywords>
+    <repo>https://github.com/hejun-lyne/com-anycourse-bridge.git</repo>
 
-    <js-module src="www/sms.js" name="sms">
-        <clobbers target="sms" />
+    <js-module src="www/bridge.js" name="bridge">
+        <clobbers target="bridge" />
     </js-module>
 
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Sms" >
-                <param name="android-package" value="com.anycourse.sms.Sms"/>
+                <param name="android-package" value="com.anycourse.plugin.Bridge"/>
             </feature>
         </config-file>
 
-        <source-file src="src/android/Sms.java" target-dir="src/com/anycourse/sms" />
+        <source-file src="src/android/Bridge.java" target-dir="src/com/anycourse/plugin" />
     </platform>
 
     <!-- ios -->
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="Sms">
-                <param name="ios-package" value="AnyCourseSms"/>
+            <feature name="Bridge">
+                <param name="ios-package" value="AnyCourseBridge"/>
             </feature>
         </config-file>
 
-        <header-file src="src/ios/AnyCourseSms.h" />
-        <source-file src="src/ios/AnyCourseSms.m" />
+        <header-file src="src/ios/AnyCourseBridge.h" />
+        <source-file src="src/ios/AnyCourseBridge.m" />
     </platform>
 
 </plugin>

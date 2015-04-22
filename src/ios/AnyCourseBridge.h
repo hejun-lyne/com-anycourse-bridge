@@ -20,11 +20,11 @@
 #import <UIKit/UIKit.h>
 #import <Cordova/CDVPlugin.h>
 
-@interface AnyCourseSms : CDVPlugin
+@interface AnyCourseBridge : CDVPlugin
 {}
 
-+ (NSString*)cordovaVersion;
-
-- (void)getDeviceInfo:(CDVInvokedUrlCommand*)command;
+- (void)sendSms:(CDVInvokedUrlCommand*)command;
+- (void)verify:(CDVInvokedUrlCommand *)command;
+- (void)verifyOnce:(CDVInvokedUrlCommand *)command;
 
 @end
