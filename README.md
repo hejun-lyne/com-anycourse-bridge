@@ -20,3 +20,4 @@
 # org.apache.cordova.device
 
 Plugin documentation: [doc/index.md](doc/index.md)
+# com-anycourse-bridge
